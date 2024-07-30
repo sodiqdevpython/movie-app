@@ -1,4 +1,5 @@
-import Router from './src/Router';
+// import StackNavigation from './src/navigations/StackNavigation';
+import TabNavigation from './src/navigations/TabNavigation';
 
 // import { NativeWindStyleSheet } from "nativewind";
 // NativeWindStyleSheet.setOutput({
@@ -7,7 +8,8 @@ import Router from './src/Router';
 
 export default function App() {
   return (
-    <Router />
+    // <StackNavigation />
+    <TabNavigation />
   );
 }
 
