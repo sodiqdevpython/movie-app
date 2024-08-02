@@ -1,5 +1,4 @@
-// import StackNavigation from './src/navigations/StackNavigation';
-import TabNavigation from './src/navigations/TabNavigation';
+import StackNavigation from './src/navigations/StackNavigation';
 
 // import { NativeWindStyleSheet } from "nativewind";
 // NativeWindStyleSheet.setOutput({
@@ -8,8 +7,6 @@ import TabNavigation from './src/navigations/TabNavigation';
 
 export default function App() {
   return (
-    // <StackNavigation />
-    <TabNavigation />
+    <StackNavigation />
   );
 }
-
