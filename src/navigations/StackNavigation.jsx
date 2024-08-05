@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../screens/Home';
 import Detail from '../screens/Detail';
 import Profile from '../screens/Profile';
+import Search from '../screens/Search';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ export default function StackNavigation() {
                 <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
                 <Stack.Screen name="Detail" component={Detail} options={{ headerShown: false }} />
                 <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
+                <Stack.Screen name="Search" component={Search} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

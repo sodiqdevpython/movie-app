@@ -23,7 +23,7 @@ export default function Navbar({ isAbsolute = true }) {
 
     return (
         <SafeAreaView className={`${isAbsolute ? 'absolute' : 'static'} px-3 w-full flex-row justify-between items-center z-10 mt-2`}>
-            <TouchableOpacity onPress={() => navigation.goBack()}>
+            <TouchableOpacity onLongPress={() => navigation.navigate('Home')} onPress={() => navigation.goBack()}>
                 <AntDesign name="leftcircle" size={40} className="text-[#eab308]" />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => !isLiked ? setIsLiked(true) : setIsLiked(false)}>

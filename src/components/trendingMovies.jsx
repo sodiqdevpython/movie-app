@@ -39,7 +39,8 @@ function MovieCard({ item }) {
                     style={{
                         width: width * 0.8,
                         height: height * 0.5
-                    }} source={item.image} />
+                    }} source={{ uri: `https://image.tmdb.org/t/p/w500${item.poster_path}` }} />
+                <Text>{item.name}</Text>
                 {/* <Text className='text-white mt-3 text-xl'>
                     {item.title.length > 30 ? item.title.slice(0, 30) + '...' : item.title}
                 </Text> */}
